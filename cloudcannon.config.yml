@@ -1,0 +1,24 @@
+# CloudCannon Configuration
+source: .
+output: .
+
+# Global configuration
+timezone: America/New_York
+
+# Collections (for repeatable content like News or Products)
+collections_config:
+  news:
+    path: news.html
+    parser: front-matter
+    output: true
+
+# Editor configuration
+_inputs:
+  date:
+    type: date
+    instance_value: now
+
+# Paths
+paths:
+  uploads: assets/images
+  static: assets
