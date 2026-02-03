@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PianoHub - Piano Group Buy | New York</title>
+    <title>Join Group Buy - PianoHub</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -14,7 +14,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
-                <li><a href="join-group-buy.html">Join Group Buy</a></li>
+                <li><a href="join-group-buy.html" class="active">Join Group Buy</a></li>
                 <li><a href="testimony.html">Testimony</a></li>
                 <li><a href="news.html">News</a></li>
             </ul>
@@ -22,39 +22,52 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Welcome to PianoHub Piano Group Buy</h1>
-            <p>Buy a Yamaha or Kawai piano at wholesale price with others in a group buy.</p>
+        <section class="page-header">
+            <h1>Join the Group Buy</h1>
+            <p>Fill out the form below to get the current group buy pricing list.</p>
         </section>
 
-        <section class="benefits">
-            <h2>Why Choose Us</h2>
-            <div class="benefit-item">
-                <h3>Guaranteed Lowest Price</h3>
-                <p>Welcome to PianoHub's New York Chinese Piano Group Buy page! Here you can buy brand new Yamaha and Kawai pianos of any model.</p>
-            </div>
-            <div class="benefit-item">
-                <h3>Authentic Products</h3>
-                <p>We only choose brand-authorized dealers to ensure reliable sources. We sign agreements with dealers to ensure they never sell old or display pianos to group buy customers.</p>
-            </div>
-            <div class="benefit-item">
-                <h3>Service</h3>
-                <p>I will serve you throughout the process. If you have any questions, just send me an email.</p>
-            </div>
-        </section>
+        <section class="form-section">
+            <div class="container">
+                <form action="https://formspree.io/f/xbjqrjqz" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
 
-        <section class="products">
-            <h2>Our Popular Models</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <h3>Yamaha U3</h3>
-                    <a href="product-page/yamaha-u3.html" class="btn">View Details</a>
-                </div>
-                <div class="product-card">
-                    <h3>Yamaha U1</h3>
-                    <a href="product-page/yamaha-u1.html" class="btn">View Details</a>
-                </div>
-                <!-- More products to be added -->
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">City/State:</label>
+                        <input type="text" id="location" name="location" placeholder="e.g. New York, NY">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="model">Interested Model:</label>
+                        <select id="model" name="model">
+                            <option value="Yamaha U1">Yamaha U1</option>
+                            <option value="Yamaha U3">Yamaha U3</option>
+                            <option value="Kawai K300">Kawai K300</option>
+                            <option value="Kawai K500">Kawai K500</option>
+                            <option value="Other">Other (Specify in Message)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Any specific questions?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Request Price List</button>
+                </form>
             </div>
         </section>
     </main>
